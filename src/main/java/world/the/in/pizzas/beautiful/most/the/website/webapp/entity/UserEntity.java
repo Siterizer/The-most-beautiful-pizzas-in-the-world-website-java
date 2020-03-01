@@ -1,6 +1,9 @@
 package world.the.in.pizzas.beautiful.most.the.website.webapp.entity;
 
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -10,6 +13,10 @@ import javax.persistence.Table;
 import javax.persistence.Id;
 import java.util.Collection;
 
+
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name="user")
 public class UserEntity implements UserDetails {
